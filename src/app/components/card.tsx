@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Card = (props: { imageSrc: string; imageAlt: string; link: string; title: string; }) => {
     return (
-        <div className="rounded-lg shadow odd:bg-gray-800 odd:border-gray-700 even:bg-gray-600 even:border-gray-500">
+        <div className="rounded-lg shadow odd:bg-blue-800 odd:border-blue-700 even:bg-blue-500 even:border-blue-400">
             <Link href={props.link}>
                 <div className="relative">
                     <Image
@@ -14,7 +14,7 @@ const Card = (props: { imageSrc: string; imageAlt: string; link: string; title: 
                     />
                 </div>
                 <div className="p-5">
-                    <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{props.title}</h5>
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-white">{props.title}</h5>
 
                     <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
                         Read more
