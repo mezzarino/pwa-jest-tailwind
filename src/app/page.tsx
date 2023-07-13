@@ -2,6 +2,13 @@ import Header from "./components/header";
 import Card from "./components/card"
 import { cardData } from "./constants/card-data";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Travel Guides",
+  description: "Our travel guides are jam packed with top tips and insider inspiration.",
+};
+
 export default function Home() {
   return (
     <main className="flex flex-col justify-between">
