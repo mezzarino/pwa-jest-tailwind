@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Card = (props: { imageSrc: string; imageAlt: string; link: string; title: string; }) => {
     return (
@@ -17,10 +19,7 @@ const Card = (props: { imageSrc: string; imageAlt: string; link: string; title: 
                     <h3 className="mb-2 text-xl font-bold tracking-tight text-white">{props.title}</h3>
 
                     <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
-                        Read more
-                        <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
+                        Read more <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4 pl-1" /> 
                     </button>
                 </div>
             </Link>
