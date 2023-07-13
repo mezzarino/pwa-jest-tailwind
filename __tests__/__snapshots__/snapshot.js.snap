@@ -34,7 +34,7 @@ exports[`renders homepage unchanged 1`] = `
       </div>
     </header>
     <section
-      class="py-4 md:py-6 lg:py-8 px-4 lg:px-0 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-6"
+      class="py-4 md:py-6 lg:py-8 px-4 lg:px-0 max-w-5xl mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-6"
     >
       <div
         class="rounded-lg shadow odd:bg-gray-800 odd:border-gray-700 even:bg-gray-600 even:border-gray-500"
