@@ -1,15 +1,14 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Home from '../src/app/page';
+import Offline from '../../src/app/offline/page';
 
-describe('Home', () => {
-  it('should render the home page', () => {
-    const { container } = render(<Home />);
-    
+describe('Offline', () => {
+  it('should render the offline page', () => {
+    const { container } = render(<Offline />);
     const header = container.querySelector('h1');
 
     expect(header).toBeInTheDocument();
-    expect(header).toHaveTextContent('Travel guides');
+    expect(header).toHaveTextContent('Offline');
   });
 });
