@@ -19,6 +19,10 @@ export function generateCsp() {
     },
     {
       name: 'style-src',
+      values: ["'self'", `'nonce-${nonce}'`],
+    },
+    {
+      name: 'style-src-attr',
       values: ["'self'", "'unsafe-inline'"],
     },
     {
