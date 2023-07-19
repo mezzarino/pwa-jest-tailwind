@@ -5,7 +5,7 @@ const withPWA = withPWAInit({
     dest: 'public',
     buildExcludes: ["app-build-manifest.json"],
     fallbacks: {
-        image: 'https://fakeimg.pl/384x384',
+        image: '/images/384x384.jpg',
         document: '/offline/'
     }
 });
@@ -27,6 +27,18 @@ const generateAppDirEntry = (entry) => {
     });
 };
 
+ const securityHeaders = [
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  { key: 'X-Frame-Options', value: 'DENY' },
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'Access-Control-Allow-Origin', value: 'https://pwa-jest-tailwind.vercel.app' },
+  { key: 'X-DNS-Prefetch-Control', value: 'on' },
+  { key: 'X-XSS-Protection', value: '1; mode=block' },
+  { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+];
+
+
 module.exports = withPWA({
     reactStrictMode: true,
     webpack: (config) => {
@@ -43,5 +55,10 @@ module.exports = withPWA({
                 port: '',
             },
         ],
+    },
+    async headers() {
+        return [
+        { source: '/(.*)', headers: securityHeaders },
+        ];
     }
 });
