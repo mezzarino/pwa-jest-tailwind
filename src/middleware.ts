@@ -53,9 +53,6 @@ export function generateCsp() {
 }
 
 export async function middleware(request: NextRequest) {
-  const host = request.headers.get("Host") || '';
-  const isLocalDev = host.startsWith("localhost");
-
   // generate CSP and nonce
   const { csp, nonce } = generateCsp();
 
@@ -67,10 +64,7 @@ export async function middleware(request: NextRequest) {
 
   const headerKey = 'content-security-policy';
 
-  const cspSsl = !isLocalDev ? '; upgrade-insecure-requests' : '';
-  const fullCspString = `${csp} ${cspSsl}`;
-
-  requestHeaders.set(headerKey, fullCspString);
+  requestHeaders.set(headerKey, csp);
 
   // create new response
   const response = NextResponse.next({
