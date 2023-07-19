@@ -36,9 +36,11 @@ export function generateCsp() {
     { name: 'manifest-src', values: ["'self'", 'https://pwa-jest-tailwind.vercel.app/'] },
     { name: 'media-src', values: ["'none'"] },
     { name: 'object-src', values: ["'none'"] },
+    { name: 'frame-src', values: ["'self'"] },
     { name: 'frame-ancestors', values: ["'none'"] },
     { name: 'form-action', values: ["'self'"] },
     { name: 'base-uri', values: ["'none'"] },
+    { name: 'child-src', values: ["'self'"] }
   ];
 
   const cspString = csp
