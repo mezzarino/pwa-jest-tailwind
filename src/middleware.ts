@@ -11,10 +11,11 @@ export function generateCsp() {
     {
       name: 'script-src',
       values: [
-        "'report-sample'",
-        "'self'",
-        `'nonce-${nonce}'`,
         "'strict-dynamic'",
+        `'nonce-${nonce}'`,
+        "'unsafe-inline'",
+        'http:',
+        'https:'
       ].concat(isProduction ? [] : devScriptPolicy),
     },
     {
