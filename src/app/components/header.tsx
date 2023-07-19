@@ -1,6 +1,10 @@
+import { headers } from "next/headers";
+
 const Header = (props: { title: string; text: string }) => {
+    const headersList = headers();
+    const headerNonceValue = headersList.get('x-nonce') || '';
     return (
-        <div className="w-full bg-center bg-cover">
+        <div className="w-full bg-center bg-cover" nonce={headerNonceValue}>
             <div className="flex justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
                 <div className="container px-4 mx-auto">
                     <div className="max-w-5xl mx-auto text-left">

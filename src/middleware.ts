@@ -11,16 +11,15 @@ export function generateCsp() {
     {
       name: 'script-src',
       values: [
+        "'report-sample'",
         "'self'",
-        `'unsafe-inline'`,
+        `'nonce-${nonce}'`,
+        "'strict-dynamic'",
       ].concat(isProduction ? [] : devScriptPolicy),
     },
     {
       name: 'style-src',
-      values: [
-        "'self'",
-        `'unsafe-inline'`,
-      ]
+      values: ["'self'", "'unsafe-inline'"],
     },
     {
       name: 'connect-src',
