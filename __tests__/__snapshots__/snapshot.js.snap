@@ -37,7 +37,7 @@ exports[`renders homepage unchanged 1`] = `
       class="py-4 md:py-6 lg:py-8 px-4 lg:px-0 max-w-5xl mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-6"
     >
       <div
-        class="rounded-lg shadow odd:bg-gray-800 odd:border-gray-700 even:bg-gray-600 even:border-gray-500"
+        class="rounded-lg shadow odd:bg-blue-800 odd:border-blue-700 even:bg-blue-500 even:border-blue-400"
       >
         <a
           href="travel-guides/australia/"
@@ -49,8 +49,8 @@ exports[`renders homepage unchanged 1`] = `
               alt="Test image"
               data-nimg="1"
               decoding="async"
+              fetchpriority="high"
               height="250"
-              loading="lazy"
               src="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75"
               srcset="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75 2x"
               style="color: transparent;"
@@ -60,28 +60,28 @@ exports[`renders homepage unchanged 1`] = `
           <div
             class="p-5"
           >
-            <h5
-              class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+            <h2
+              class="mb-2 text-xl font-bold tracking-tight text-white"
             >
               Australia
-            </h5>
+            </h2>
             <button
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
             >
-              Read more
+              Read more 
               <svg
                 aria-hidden="true"
-                class="w-3.5 h-3.5 ml-2"
-                fill="none"
-                viewBox="0 0 14 10"
+                class="svg-inline--fa fa-arrow-right w-4 h-4 pl-1"
+                data-icon="arrow-right"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  fill="currentColor"
                 />
               </svg>
             </button>
@@ -89,7 +89,7 @@ exports[`renders homepage unchanged 1`] = `
         </a>
       </div>
       <div
-        class="rounded-lg shadow odd:bg-gray-800 odd:border-gray-700 even:bg-gray-600 even:border-gray-500"
+        class="rounded-lg shadow odd:bg-blue-800 odd:border-blue-700 even:bg-blue-500 even:border-blue-400"
       >
         <a
           href="travel-guides/cape-verde/"
@@ -101,8 +101,8 @@ exports[`renders homepage unchanged 1`] = `
               alt="Test image"
               data-nimg="1"
               decoding="async"
+              fetchpriority="high"
               height="250"
-              loading="lazy"
               src="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75"
               srcset="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75 2x"
               style="color: transparent;"
@@ -112,28 +112,28 @@ exports[`renders homepage unchanged 1`] = `
           <div
             class="p-5"
           >
-            <h5
-              class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+            <h2
+              class="mb-2 text-xl font-bold tracking-tight text-white"
             >
               Cape Verde
-            </h5>
+            </h2>
             <button
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
             >
-              Read more
+              Read more 
               <svg
                 aria-hidden="true"
-                class="w-3.5 h-3.5 ml-2"
-                fill="none"
-                viewBox="0 0 14 10"
+                class="svg-inline--fa fa-arrow-right w-4 h-4 pl-1"
+                data-icon="arrow-right"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  fill="currentColor"
                 />
               </svg>
             </button>
@@ -141,7 +141,7 @@ exports[`renders homepage unchanged 1`] = `
         </a>
       </div>
       <div
-        class="rounded-lg shadow odd:bg-gray-800 odd:border-gray-700 even:bg-gray-600 even:border-gray-500"
+        class="rounded-lg shadow odd:bg-blue-800 odd:border-blue-700 even:bg-blue-500 even:border-blue-400"
       >
         <a
           href="travel-guides/croatia/"
@@ -153,8 +153,8 @@ exports[`renders homepage unchanged 1`] = `
               alt="Test image"
               data-nimg="1"
               decoding="async"
+              fetchpriority="high"
               height="250"
-              loading="lazy"
               src="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75"
               srcset="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75 2x"
               style="color: transparent;"
@@ -164,28 +164,28 @@ exports[`renders homepage unchanged 1`] = `
           <div
             class="p-5"
           >
-            <h5
-              class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+            <h2
+              class="mb-2 text-xl font-bold tracking-tight text-white"
             >
               Croatia
-            </h5>
+            </h2>
             <button
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
             >
-              Read more
+              Read more 
               <svg
                 aria-hidden="true"
-                class="w-3.5 h-3.5 ml-2"
-                fill="none"
-                viewBox="0 0 14 10"
+                class="svg-inline--fa fa-arrow-right w-4 h-4 pl-1"
+                data-icon="arrow-right"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  fill="currentColor"
                 />
               </svg>
             </button>
@@ -193,7 +193,7 @@ exports[`renders homepage unchanged 1`] = `
         </a>
       </div>
       <div
-        class="rounded-lg shadow odd:bg-gray-800 odd:border-gray-700 even:bg-gray-600 even:border-gray-500"
+        class="rounded-lg shadow odd:bg-blue-800 odd:border-blue-700 even:bg-blue-500 even:border-blue-400"
       >
         <a
           href="travel-guides/cuba/"
@@ -205,8 +205,8 @@ exports[`renders homepage unchanged 1`] = `
               alt="Test image"
               data-nimg="1"
               decoding="async"
+              fetchpriority="high"
               height="250"
-              loading="lazy"
               src="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75"
               srcset="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75 2x"
               style="color: transparent;"
@@ -216,28 +216,28 @@ exports[`renders homepage unchanged 1`] = `
           <div
             class="p-5"
           >
-            <h5
-              class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+            <h2
+              class="mb-2 text-xl font-bold tracking-tight text-white"
             >
               Cuba
-            </h5>
+            </h2>
             <button
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
             >
-              Read more
+              Read more 
               <svg
                 aria-hidden="true"
-                class="w-3.5 h-3.5 ml-2"
-                fill="none"
-                viewBox="0 0 14 10"
+                class="svg-inline--fa fa-arrow-right w-4 h-4 pl-1"
+                data-icon="arrow-right"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  fill="currentColor"
                 />
               </svg>
             </button>
@@ -245,7 +245,7 @@ exports[`renders homepage unchanged 1`] = `
         </a>
       </div>
       <div
-        class="rounded-lg shadow odd:bg-gray-800 odd:border-gray-700 even:bg-gray-600 even:border-gray-500"
+        class="rounded-lg shadow odd:bg-blue-800 odd:border-blue-700 even:bg-blue-500 even:border-blue-400"
       >
         <a
           href="travel-guides/egypt/"
@@ -257,8 +257,8 @@ exports[`renders homepage unchanged 1`] = `
               alt="Test image"
               data-nimg="1"
               decoding="async"
+              fetchpriority="high"
               height="250"
-              loading="lazy"
               src="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75"
               srcset="/_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Ffakeimg.pl%2F400x250&w=828&q=75 2x"
               style="color: transparent;"
@@ -268,28 +268,28 @@ exports[`renders homepage unchanged 1`] = `
           <div
             class="p-5"
           >
-            <h5
-              class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+            <h2
+              class="mb-2 text-xl font-bold tracking-tight text-white"
             >
               Egypt
-            </h5>
+            </h2>
             <button
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
             >
-              Read more
+              Read more 
               <svg
                 aria-hidden="true"
-                class="w-3.5 h-3.5 ml-2"
-                fill="none"
-                viewBox="0 0 14 10"
+                class="svg-inline--fa fa-arrow-right w-4 h-4 pl-1"
+                data-icon="arrow-right"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  fill="currentColor"
                 />
               </svg>
             </button>

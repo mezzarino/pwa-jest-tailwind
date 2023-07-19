@@ -13,7 +13,8 @@ const config = {
  
   testEnvironment: 'jest-environment-jsdom',
   collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.tsx", "!src/app/_offline.tsx", "!src/app/travel-guides/**"]
+  collectCoverageFrom: ["src/**/*.tsx", "!src/app/_offline.tsx", "!src/app/travel-guides/**"],
+  coverageReporters: ["json-summary", "html"]
 }
  
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
