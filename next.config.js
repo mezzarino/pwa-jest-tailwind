@@ -40,6 +40,9 @@ const generateAppDirEntry = (entry) => {
 
 
 module.exports = withPWA({
+    experimental: {
+        serverActions: true,
+    },
     reactStrictMode: true,
     webpack: (config) => {
         const entry = generateAppDirEntry(config.entry);

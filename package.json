@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --coverage",
+    "test": "jest --coverage --silent",
     "make-badges": "istanbul-badges-readme --silent",
-    "lighthouse-report": "npx lighthouse-badges --url http://localhost:3000 -o lighthouse --save-report"
+    "lighthouse-report": "npx lighthouse-badges --url https://pwa-jest-tailwind.vercel.app -o lighthouse --save-report"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -20,21 +20,23 @@
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",
-    "eslint-config-next": "13.4.9",
-    "next": "13.4.9",
+    "eslint-config-next": "^13.4.10",
+    "next": "^13.4.10",
     "next-pwa": "^5.6.0",
     "postcss": "8.4.25",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sharp": "^0.32.3",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "babel-jest": "^29.6.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "istanbul-badges-readme": "^1.8.5",
     "jest": "^29.6.1",
-    "jest-environment-jsdom": "^29.6.1"
+    "jest-environment-jsdom": "^29.6.1",
+    "@types/jest": "^29.5.3"
   }
 }
