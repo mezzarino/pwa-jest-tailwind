@@ -3,6 +3,8 @@ const withPWAInit = require("next-pwa");
 
 const withPWA = withPWAInit({
     dest: 'public',
+    register: true,
+    skipWaiting: true,
     buildExcludes: ["app-build-manifest.json"],
     fallbacks: {
         image: '/images/384x384.jpg',
