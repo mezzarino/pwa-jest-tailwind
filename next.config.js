@@ -23,6 +23,9 @@ const withPWA = withPWAInit({
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
   { key: 'Report-To', value: '{"group":"default","max_age":31536000,"endpoints":[{"url":https://pwapoc.report-uri.com/a/d/g}],"include_subdomains":true}' },
   { key: 'NEL', value: '{"report_to":"default","max_age":31536000,"include_subdomains":true}' },
+  { key: 'Cross-Origin-Embedder-Policy', value: 'require-corp' },
+  { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
+  { key: 'Cross-Origin-Resource-Policy', value: 'same-site' },
 ];
 
 
