@@ -1,5 +1,5 @@
 const path = require("path");
-const withPWAInit = require("next-pwa");
+const withPWAInit = require("@imbios/next-pwa");
 
 const withPWA = withPWAInit({
     dest: 'public',
@@ -11,23 +11,6 @@ const withPWA = withPWAInit({
         document: '/offline/'
     }
 });
-
-const generateAppDirEntry = (entry) => {
-    const packagePath = require.resolve('next-pwa');
-    const packageDirectory = path.dirname(packagePath);
-    const registerJs = path.join(packageDirectory, "register.js");
-
-    return entry().then((entries) => {
-        if (entries["main-app"] && !entries["main-app"].includes(registerJs)) {
-            if (Array.isArray(entries["main-app"])) {
-                entries["main-app"].unshift(registerJs);
-            } else if (typeof entries["main-app"] === "string") {
-                entries["main-app"] = [registerJs, entries["main-app"]];
-            }
-        }
-        return entries;
-    });
-};
 
  const securityHeaders = [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
@@ -48,12 +31,6 @@ module.exports = withPWA({
         serverActions: true,
     },
     reactStrictMode: true,
-    webpack: (config) => {
-        const entry = generateAppDirEntry(config.entry);
-        config.entry = () => entry;
-
-        return config;
-    },
     images: {
         remotePatterns: [
             {
