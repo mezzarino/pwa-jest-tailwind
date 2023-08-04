@@ -28,7 +28,7 @@ export function generateCsp() {
     },
     {
       name: 'connect-src',
-      values: ["'self'", '*.vercel.app'],
+      values: ["'self'", '*.jsdelivr.com', '*.vercel.app'],
     },
     { name: 'font-src', values: ["'self'", 'data:'] },
     { name: 'img-src', values: ["'self'", 'data:'] },
