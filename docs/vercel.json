@@ -5,7 +5,7 @@
         "headers": [
           {
             "key": "Content-Security-Policy",
-            "value": "default-src 'none'; script-src 'strict-dynamic' 'nonce-62dce750-8f35-41c4-bbf9-a738a4d52bec' 'unsafe-inline' http: https:; style-src 'self' 'nonce-62dce750-8f35-41c4-bbf9-a738a4d52bec'; style-src-attr 'self' 'unsafe-inline'; connect-src 'self' *.jsdelivr.com *.vercel.app; font-src 'self' data:; img-src 'self' data:; worker-src 'self' blob:; manifest-src 'self' https://pwa-jest-tailwind.vercel.app/; media-src 'none'; object-src 'none'; frame-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'none'; child-src 'self'"
+            "value": "default-src 'none'; script-src 'strict-dynamic' 'nonce-62dce750-8f35-41c4-bbf9-a738a4d52bec' 'unsafe-inline' http: https:; style-src 'self' 'nonce-62dce750-8f35-41c4-bbf9-a738a4d52bec'; style-src-attr 'self' 'unsafe-inline'; connect-src 'self' *.unpkg.com *.jsdelivr.com *.vercel.app; font-src 'self' data:; img-src 'self' data:; worker-src 'self' blob:; manifest-src 'self' https://pwa-jest-tailwind.vercel.app/; media-src 'none'; object-src 'none'; frame-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'none'; child-src 'self'"
           },
           {
             "key": "Cache-Control",
